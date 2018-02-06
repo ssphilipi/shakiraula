@@ -1,0 +1,32 @@
+<ion-header>
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>Home</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+
+  <h3>Log in to your account...
+  Bodacious</h3>
+
+  <ion-list>
+    <ion-item>
+      <ion-label floating>Email</ion-label>
+      <ion-input #email type="text"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label floating>Password</ion-label>
+      <ion-input #password type="password"></ion-input>
+    </ion-item>
+  </ion-list>
+
+  <button ion-button (click)="login(email.value, password.value)">Sign In</button>
+  <button ion-button (click)="change()">Register</button>
+
+  <img src='https://vignette.wikia.nocookie.net/donkeykong/images/8/80/Funky_kong_06.png/revision/latest?cb=20120909013602&path-prefix=pt-br'>
+
+</ion-content>
